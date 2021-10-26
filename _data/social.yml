@@ -1,0 +1,9 @@
+- title: Email
+  url: mailto:nekotope@gmail.com
+  icon: fas fa-envelope
+- title: Twitter
+  url: https://twitter.com/nekotope
+  icon: fab fa-twitter
+- title: GitHub
+  url: https://github.com/nekotope
+  icon: fab fa-github

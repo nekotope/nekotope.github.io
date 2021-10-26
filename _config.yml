@@ -18,21 +18,28 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: nekotope 雑記
+author:
+  name: nekotope
+  email: nekotope@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  メモとかです。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: nekotope
+github_username: nekotope
+
+lang: ja
 
 # Build settings
 # theme: minimayll-mdl
 # plugins:
 #   - jekyll-feed
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+remote_theme: zivhub/monophase@main
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -60,8 +67,20 @@ post_type: highlight    # values [ highlight, default ]
 pagination_type: default  # values [ ops, default ]
 
 
-disqus: false
-disqus_shortname: 'gdgmanagua'
+# disqus: false
+# disqus_shortname: 'gdgmanagua'
 
 
 markdown: kramdown
+
+# custom collection for some pages(post ja naiyatsu)
+collections:
+  curations:
+    output: true
+
+# for jekyll-seo plugin
+social:
+  name: nekotope
+  links:
+    - https://twitter.com/nekotope
+    - https://github.com/nekotope
