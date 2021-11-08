@@ -5,7 +5,29 @@
 
 body {
     font-family:"Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "メイリオ", "ＭＳ Ｐゴシック", sans-serif !important;
-    font-size: 1em !important;
+    font-size: 1.08em !important;
     letter-spacing: .75px !important;
     line-height: 1.8 !important;
+}
+
+// darkmode の背景色の上書き
+@media (prefers-color-scheme: dark) {
+    .highlight, .highlight .w { color: #fbf1c7; background-color: #212127 !important; }
+    .highlight .err { color: #fb4934; background-color: #212127 !important; font-weight: bold; }
+    .highlight .gi { color: #b8bb26; background-color: #212127 !important; }
+    .highlight .gd { color: #fb4934; background-color: #212127 !important; }
+
+    :root { /** Color */ --body-bg-color: #212127; --body-color: var(--oc-gray-5); --code-bg-color: var(--oc-gray-7); --heading-color: var(--oc-gray-3); --border-color: var(--oc-gray-7); --link-color: var(--oc-cyan-4); --link-color-rgb: var(--oc-cyan-4-rgb); --link-hover-color: var(--oc-cyan-6); --info-color: var(--oc-green-1); --warning-color: var(--oc-yellow-1); --danger-color: var(--oc-red-1); } 
+
+}
+
+h2 {
+    border-left: solid 5px rgb(143, 114, 0) !important;
+    padding-left: 10px !important;
+    border-radius: 5px !important;
+}
+h3, h4, h5, h6 {
+    border-left: solid 3px rgb(87, 69, 0) !important;
+    padding-left: 10px !important;
+    border-radius: 5px !important;
 }
